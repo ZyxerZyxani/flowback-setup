@@ -1,4 +1,13 @@
 # Flowback Quick Setup
+
+**Dependencies for the setup scripts:**
+* git
+* curl
+* apt
+
+Please note that it is not recomended to install apt package manager on a linux distribution that doesn't use it by default.
+<br />
+____________________________________________________________________________________________________________________________
 This quick setup is (for now) a collection of scripts to setup Flowback!
 If you plan to use it, do not clone this repository, download it as zip!
 
