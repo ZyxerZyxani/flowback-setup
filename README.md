@@ -3,6 +3,7 @@
 **Dependencies for the setup scripts:**
 * git
 * curl
+* build-essential
 * apt
 
 Please note that it is not recomended to install apt package manager on a linux distribution that doesn't use it by default.
