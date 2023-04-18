@@ -6,25 +6,18 @@
 * build-essential
 * apt
 
+All except apt will be installed by setup.bash because it assumes you are on debian or ubuntu based distro that has apt preinstalled. 
 Please note that it is not recomended to install apt package manager on a linux distribution that doesn't use it by default.
 <br />
 ____________________________________________________________________________________________________________________________
 This quick setup is (for now) a collection of scripts to setup Flowback!
 If you plan to use it, do not clone this repository, download it as zip!
 
-To set it up initially, run the following scripts in resources folder:
-* caddy.bash
-* python.bash
-* postgres.bash
-* npm.bash
-* docker.bash
-* redis.bash
+Run 
 
-Once done, in resources/flowback, run following download script within your preferred directory:
-* backend.bash
-* frontend.bash
+To set it up initially, run setup.bash. It will install flowback to /opt/flowback.
 
-Within resources/templates, there's a .flowback_pgpass file that needs to be in backend.
+Within resources/templates/flowback/backend/, there's a .flowback_pgpass file that needs to be in backend folder.
 
 Also follow the .env.example in respective backend/frontend folders.
 
