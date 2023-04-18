@@ -17,9 +17,9 @@ Run
 
 To set it up initially, run setup.bash. It will install flowback to /opt/flowback.
 
-Within resources/templates/flowback/backend/, there's a .flowback_pgpass file that needs to be in backend folder.
+Within /opt/flowback/backend/, there's a .flowback_pgpass file that needs to be in backend folder.
 
 Also follow the .env.example in respective backend/frontend folders.
 
-once done, you can run update_backend.bash and update_frontend.bash within respective backend/frontend folders to setup
+Once done, you can run update_backend.bash and update_frontend.bash within respective backend/frontend folders to setup
 the flowback instance. Don't forget to change these files if there's any customizations needed!
