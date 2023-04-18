@@ -8,7 +8,7 @@ package = "postgres"
 if dpkg-query -Wf'${db:Status-abbrev}' "$package" 2>/dev/null | grep -q '^i'; then
     printf 'The package "%s" _is_ installed!\nSkipping.\n' "$package"
 else
-    sudo apt install postgresql
+    sudo apt install postgresql -y
 fi
 
 package = "postgres-contrib"
@@ -17,7 +17,7 @@ package = "postgres-contrib"
 if dpkg-query -Wf'${db:Status-abbrev}' "$package" 2>/dev/null | grep -q '^i'; then
     printf 'The package "%s" _is_ installed!\nSkipping.\n' "$package"
 else
-    sudo apt install postgresql-contrib
+    sudo apt install postgresql-contrib -y
 fi
 
 sudo systemctl enable postgresql.service
